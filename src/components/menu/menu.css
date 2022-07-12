@@ -35,6 +35,10 @@
  .menuHeader button{
    width: 30px;
    height: 30px;
+   border-radius: 35px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
  }
 
  .menuItems {
