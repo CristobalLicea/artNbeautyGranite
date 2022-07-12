@@ -1,0 +1,50 @@
+ 
+ .banner {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding:  20px 0;
+}
+
+.bannerContent {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.bannerContent h2{
+  margin: 0;
+  font-size: 35px;
+  margin-right: 35px;
+}
+
+.cardHolder {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 375px) {
+  .bannerContent{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .bannerContent h2 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+}

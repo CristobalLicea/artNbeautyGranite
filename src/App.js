@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+import {
+  Routes,
+  Route,
+  Outlet,
+  useNavigate
+} from "react-router-dom";
+import Home from './components/home/home';
+import Products from './components/products/products';
+import Nav from './components/nav/nav';
+import GranitePage from './components/granite/granite';
+import MarblePage from './components/marble/marble';
+import Services from './components/services/services';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}>
+        <Route path="/products" element={<Products />} />
+        <Route path="/services" element={<Services />} />
+
+      </Route>
+      
+    </Routes>
   );
-}
+} 
 
 export default App;

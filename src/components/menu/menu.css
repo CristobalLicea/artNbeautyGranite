@@ -1,0 +1,94 @@
+
+.menuu {
+  box-sizing:border-box;
+  width: 100vw;
+  height: 584px;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid gray;
+  border-radius: 5px;
+  position: absolute;
+  right: -25px;
+  top: 68px;
+  transition: .5s ease-in-out;
+  padding: 10px;
+}
+
+[data-animation="effect"].menuu {
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+ }
+
+[data-animation="effect"].menuu.isVisible {
+   opacity: 100;
+   z-index: 5;
+  pointer-events: all;
+ }
+
+ .menuHeader {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: end;
+ }
+
+ .menuHeader button{
+   width: 30px;
+   height: 30px;
+ }
+
+ .menuItems {
+   width:100%;
+   height: 95%;
+   margin-top: 5px;
+   background-color: rgb(253, 253, 253);
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .menuCol{
+   box-sizing: border-box;
+   text-align: center;
+   padding: 10px 25px;
+   width: 25%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+ }
+
+ .menuCol h2{
+   font-size: 45px;
+   padding: 0;
+   margin: 0;
+   font-family: The Nautigal;
+   transition: .3s ease-in-out;
+   margin-bottom: 40px;
+ }
+
+ .menuCol h2:hover{
+   color: rgb(120, 0, 0);
+   cursor: pointer;
+ }
+
+ .menuItem {
+   width: 100%;
+   height: 40px;
+   font-size: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .1s ease-in-out;
+   margin: 15px 0px;
+ }
+
+ .menuItem:hover {
+   cursor: pointer;
+   color: blue;
+   border-bottom: solid blue 1px;
+ }
+
+
+
+
+

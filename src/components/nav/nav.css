@@ -1,0 +1,127 @@
+nav {
+  box-sizing: border-box;
+  height: 90px;
+  width: 100vw;
+  background-color: black;
+  border-bottom: solid black 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: The Nautigal;
+  color: white;
+  font-size: 55px;
+  transition: .2s ease-in-out;
+}
+nav h1:hover {
+  color: rgb(97, 223, 223);
+  transform: scale(1);
+  text-shadow: 3px 3px rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+nav button {
+  border-radius: 25px;
+  font-size: 20px;
+  transition: .2s ease-in-out;
+}
+
+.navRight {
+  display: flex;
+}
+
+.searchBtn {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.searchBtn:hover {
+  background-color: rgb(199, 253, 253);
+}
+
+.browseBtn {
+  width: 190px;
+  height: 45px;
+  margin-left: 15px;
+  background-color: rgb(255, 217, 0);
+}
+
+.browseBtn:hover {
+  background-color: white;
+  border: 3px solid rgb(255, 208, 0);
+  color: rgb(255, 166, 0);
+}
+
+.consultBtn {
+  width: 190px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  margin-left: 15px;
+  background-color: rgb(255, 217, 0);
+}
+
+.consultBtn:hover {
+  color: rgb(0, 255, 0);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 255, 0);
+
+}
+
+.menu {
+  position: relative;
+}
+
+.menuBtn {
+  width: 45px;
+  height: 45px;  
+  margin-left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.searchBox {
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  right: 75px;
+  bottom: 3px;
+  width: 400px;
+  height: 40px;
+  transition: .5s ease-in-out;
+}
+
+.search {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.search.isVisible {
+  opacity: 100;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 375px) {
+  .searchBtn, .browseBtn, .consultBtn {
+    display: none;
+  }
+
+  nav {
+    padding: 0 5px;
+  }
+
+  nav h1 {
+    font-size: 40px;
+  }
+}

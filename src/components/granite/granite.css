@@ -1,0 +1,58 @@
+#granitePage {
+  box-sizing: border-box;
+  margin-top: 90px;
+  width: 100vw;
+  padding: 10px 80px;
+}
+
+.graniteHeader {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.graniteHeader h1 {
+  font-size: 70px;
+  font-family: The Nautigal;
+}
+
+.graniteHeader p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+.showBox {
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+}
+
+.showIcons {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.showCard {
+}
+
+.showIcon {
+  box-sizing: border-box;
+  height: 280px;
+  width: 280px;
+  overflow: hidden;
+}
+
+.showIcon img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: .2s ease-in-out;
+}
+
+.showIcon img:hover {
+  transform: scale(5);
+}
+

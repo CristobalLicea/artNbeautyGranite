@@ -1,0 +1,10 @@
+#productsPage {
+  height: calc(100vh - 90px);
+  opacity: 60;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.products {
+  justify-content: center;
+}
