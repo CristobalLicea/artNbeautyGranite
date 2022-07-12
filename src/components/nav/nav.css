@@ -131,4 +131,9 @@ nav button {
     align-items: center;
     color: black;
   }
+
+  .menuIcon {
+    height: 100%;
+    width: 100%;
+  }
 }

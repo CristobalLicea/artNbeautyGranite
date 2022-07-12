@@ -28,7 +28,7 @@ const Nav = () => {
           <button className="browseBtn">Consultation</button>
           <button className="consultBtn">Browse Stones</button>
           <div className="menu">
-            <button onClick={() => setMenu(!menu)} className="menuBtn"><AiOutlineAlignRight /></button>
+            <button onClick={() => setMenu(!menu)} className="menuBtn"><AiOutlineAlignRight className="menuIcon"/></button>
             <Menu isOpen={menu} close={() => setMenu(false)}/>
           </div>
         </div>
