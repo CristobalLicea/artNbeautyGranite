@@ -7,6 +7,7 @@ import {
 import Home from './components/home/home';
 import Products from './components/products/products';
 import Services from './components/services/services';
+import { useMediaQuery } from 'react-responsive';
 
 
 function App() {
