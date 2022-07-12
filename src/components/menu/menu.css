@@ -9,7 +9,7 @@
   position: absolute;
   right: -25px;
   top: 68px;
-  transition: .5s ease-in-out;
+  transition: all .5s ease-in-out;
   padding: 10px;
 }
 
@@ -92,8 +92,9 @@
  @media screen and (max-width: 480px) {
   .menuu {
     padding: 0;
-    height: calc(100vh - 90px);
-    right: -10px
+    height: calc(100vh - 100px);
+    right: -10px;
+    border: 0;
   }
 
   .menuItems {
@@ -114,7 +115,7 @@
   }
 
   .tester {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
   }
 
   .menuCol {

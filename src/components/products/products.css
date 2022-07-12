@@ -1,10 +1,23 @@
 #productsPage {
-  height: calc(100vh - 90px);
+  box-sizing: border-box;
+  height: 98vh;
+  width: 100vw;
   opacity: 60;
-  margin-top: 90px;
   text-align: center;
+  background-color: rgb(255, 193, 193);
+  font-family: mukta;
+}
+
+.productsHeader {
+  padding-top: 90px;
 }
 
 .products {
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  #productsPage {
+    height: 100vh;
+  }
 }
