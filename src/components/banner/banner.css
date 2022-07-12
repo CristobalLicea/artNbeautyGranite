@@ -33,12 +33,13 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+
+  .banner {
+    display: none;
+  }
   .bannerContent{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
+    display: none;
   }
 
   .bannerContent h2 {

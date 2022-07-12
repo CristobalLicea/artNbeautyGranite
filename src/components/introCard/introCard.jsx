@@ -4,19 +4,16 @@ import './introCard.css'
 const IntroCard = () => {
   return(
     <div className="introCard">
-
-        <div className="contactCard">
-          <h2>Art & Beauty Granite</h2>
-          <p>Call or Text for Consultations:</p>
+      <div className="contactCard">
+          <h2 className="contactCardTitle">Art & Beauty Granite</h2>
+          <p className="slogan">Best Prices in San Antonio</p>
           <h3 className="contactName">Arturo Garcia</h3>
           <div className="contactInfo">
-            <div><h4>210-875-0314</h4></div>
-            <div><h4><span style={{ color: 'blue'} }>ArturoGarcia@gmail.com</span></h4></div>
+            <div><a className="contactPhone" href="tel:210-875-0314">210-875-0314</a></div>
           </div>
             <h3 className="contactName">Gabriela Miranda</h3>
           <div className="contactInfo">
-            <div><h4>210-875-3913</h4></div>
-            <div><h4 style={{ color: 'blue'}}>GabrielaMiranda@gmail.com</h4></div>
+            <div><a className="contactPhone" href="tel:210-875-3913">210-875-3913</a></div>
           </div>
           <h3 className="contactAddress">14435 Pleasanton Rd</h3>
           <h4>San Antonio, TX 78221</h4>
@@ -40,9 +37,9 @@ const IntroCard = () => {
               <div className="weekDay">Closed</div>
             </div>
           </div>
-        </div>
-        <img src="countertop.png" alt="" />
       </div>
+      <img src="countertop.png" alt="" />
+    </div>
   )
 }
 

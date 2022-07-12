@@ -13,22 +13,22 @@ const Menu = ({isOpen, close}) => {
   return (
   <div className={!isOpen ? "menuu" : "menuu isVisible"} data-animation="effect">
     {isOpen ? 
-    <div>
+    <div className="tester">
       <div className="menuHeader">
-    <button onClick={close}>&times;</button>
-    </div>
-    <div className="menuItems">
-      <div className="menuCol">
-        <h2>Products</h2>
-        <div className="menuItem" name="/granite" onClick={navi}>
-          Granite
-        </div>
-        <div className="menuItem">
-          Marble Quartz Lodomite
-        </div>
-        <div className="menuItem">
-          Sinks
-        </div>
+        <button onClick={close}>&times;</button>
+      </div>
+      <div className="menuItems">
+        <div className="menuCol">
+          <h2 className="colHeader" onClick={navi}>Products</h2>
+          <div className="menuItem" onClick={navi}>
+            Granite
+          </div>
+          <div className="menuItem">
+            Marble Quartz Lodomite
+          </div>
+          <div className="menuItem">
+            Sinks
+          </div>
         <div className="menuItem">
           Faucets
         </div>
@@ -38,7 +38,7 @@ const Menu = ({isOpen, close}) => {
       </div>
 
       <div className="menuCol">
-      <h2>Services</h2>
+      <h2 className="colHeader">Services</h2>
         <div className="menuItem">
           Installation
         </div>
@@ -56,7 +56,7 @@ const Menu = ({isOpen, close}) => {
         </div>
       </div>
       <div className="menuCol">
-        <h2>Customer Testimonials</h2>
+        <h2 className="colHeader">Customer Testimonials</h2>
         <div className="menuItem">
           Testimonials
         </div>
@@ -74,7 +74,7 @@ const Menu = ({isOpen, close}) => {
         </div>
       </div>
       <div className="menuCol">
-      <h2>Contact Us</h2>
+      <h2 className="colHeader">Contact Us</h2>
         <div className="menuItem">
           Location
         </div>
@@ -93,9 +93,7 @@ const Menu = ({isOpen, close}) => {
       </div>
     </div>
     </div>
-    
     : null}
-    
   </div> 
   )
 }

@@ -8,7 +8,7 @@ const Nav = () => {
   let navigate = useNavigate();
 
   const navi = () => {
-    navigate('/home')
+    navigate('/')
     setMenu(false)
   }
 

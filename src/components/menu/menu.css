@@ -57,7 +57,7 @@
    flex-wrap: wrap;
  }
 
- .menuCol h2{
+ .colHeader{
    font-size: 45px;
    padding: 0;
    margin: 0;
@@ -88,6 +88,39 @@
    border-bottom: solid blue 1px;
  }
 
+
+ @media screen and (max-width: 480px) {
+  .menuu {
+    padding: 0;
+    height: calc(100vh - 90px);
+    right: -10px
+  }
+
+  .menuItems {
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+  }
+
+  .menuItem {
+    display: none;
+  }
+  .colHeader{
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    font-family: The Nautigal;
+    transition: .3s ease-in-out;
+  }
+
+  .tester {
+    height: calc(100vh - 90px);
+  }
+
+  .menuCol {
+    width: 100%;
+  }
+}
 
 
 

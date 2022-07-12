@@ -12,10 +12,10 @@ import Services from './components/services/services';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}>
-        <Route path="/products" element={<Products />} />
-        <Route path="/services" element={<Services />} />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/services" element={<Services />} />
+
     </Routes>
   );
 } 

@@ -17,4 +17,8 @@
   .fixedImage {
     display: none;
   }
+
+  .space {
+    display: none;
+  }
 }

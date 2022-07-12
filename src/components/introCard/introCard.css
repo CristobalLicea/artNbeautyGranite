@@ -27,6 +27,7 @@
   z-index: 2;
   padding: 20px 15px;
   color: black;
+  font-family: mukta;
 }
 
 .contactInfo {
@@ -35,16 +36,18 @@
   justify-content: space-between;
 }
 
-.contactCard h2 {
+.contactCardTitle {
  color: black;
- font-size: 35px;
+ font-size: 40px;
  margin: 0;
  border-bottom: solid 1px black;
  font-weight: 300;
 }
 
-.contactCard p {
-  font-size: 15px;
+.slogan {
+  font-size: 20px;
+  color: gray;
+  margin-top: 0;
 }
 
 .contactName {
@@ -53,7 +56,7 @@
   font-size: 25px;
   margin-top: 35px;
 }
-.contactCard h4 {
+.contactPhone {
   text-align: end;
   margin: 0;
   font-size: 18px;
@@ -83,10 +86,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  .introCard {
+    box-sizing: border-box;
+    height: calc(100vh - 90px);
+    margin: 0;
+    margin-top: 90px  ;
+  }
+
   .contactCard {
     box-sizing: border-box;
     width: 100vw;
-    height: fit-content;
+    height: 100%;
     position: relative;
     top: 0;
     right: 0;
@@ -94,6 +104,13 @@
     bottom: 0;
     text-align: center;
     border-radius: 0;
+    padding: 0px 15px;
+    border: 0;
+  }
+
+  .contactCardTitle {
+    font-size: 40px;
+    text-shadow: 0px 5px 3px rgb(149, 160, 255);
   }
 
   .contactName {
@@ -102,11 +119,7 @@
   }
 
   .introCard img {
-    width: 100vw;
-    height: auto;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .contactInfo {
@@ -116,9 +129,10 @@
     margin-top: 5px;
   }
 
-  .contactInfo h4 {
+  .contactPhone {
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 30px;
+    color: rgb(15, 73, 0);
   }
 
   .contactCard h4 {
