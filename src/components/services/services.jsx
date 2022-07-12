@@ -1,8 +1,23 @@
 import React from "react";
+import './services.css'
+import Nav from '../nav/nav'
+import Card from '../card/card'
 
 const Services = () => {
-  return(
-    <div></div>
+  return (
+    <div id="servicesPage">
+      <Nav />
+      <div className="servicesHeader">
+        <h1>Services</h1>
+      </div>
+      <div className="services">
+        <Card title="Fabrication"/>
+        <Card title="Installation"/>
+        <Card title="Clean Up"/>
+        <Card title="Maintenece Tips"/>
+      </div>
+
+    </div>
   )
 }
 

@@ -5,8 +5,9 @@ import './menu.css'
 const Menu = ({isOpen, close}) => {
   let navigate = useNavigate();
 
-  const navi = () => {
-    navigate('/products');
+  const navi = (e) => {
+    console.log(e.target.id)
+    navigate('/' + e.target.id);
     close()
   }
 
@@ -19,7 +20,7 @@ const Menu = ({isOpen, close}) => {
       </div>
       <div className="menuItems">
         <div className="menuCol">
-          <h2 className="colHeader" onClick={navi}>Products</h2>
+          <h2 className="colHeader" id='products' onClick={navi}>Products</h2>
           <div className="menuItem" onClick={navi}>
             Granite
           </div>
@@ -38,7 +39,7 @@ const Menu = ({isOpen, close}) => {
       </div>
 
       <div className="menuCol">
-      <h2 className="colHeader">Services</h2>
+      <h2 className="colHeader" id='services' onClick={navi}>Services</h2>
         <div className="menuItem">
           Installation
         </div>
