@@ -12,7 +12,7 @@ const Services = () => {
       </div>
       <div className="services">
         <Card title="Fabrication" image="/fabricationService.png"/>
-        <Card title="Installation"/>
+        <Card title="Installation"image="/installationIcon.jpeg" />
         <Card title="Clean Up"/>
         <Card title="Maintenece Tips"/>
       </div>
