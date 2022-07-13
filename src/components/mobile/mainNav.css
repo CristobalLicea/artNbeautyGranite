@@ -1,6 +1,7 @@
 .mainBar {
   box-sizing: border-box;
   width: 100vw;
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;

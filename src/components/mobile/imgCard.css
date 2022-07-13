@@ -9,6 +9,7 @@
   align-items: center;
   z-index: 1;
   position: relative;
+  margin: 50px 0;
 }
 
 .imgCard img{
