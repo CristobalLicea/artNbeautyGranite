@@ -15,7 +15,7 @@ const IntroCard = () => {
           <div className="contactInfo">
             <div><a className="contactPhone" href="tel:210-875-3913">210-875-3913</a></div>
           </div>
-          <h3 className="contactAddress">14435 Pleasanton Rd</h3>
+          <h3 className="contactAddress"><a href="https://www.google.com/maps/place/14435+Pleasanton+Rd,+San+Antonio,+TX+78221">14435 Pleasanton Rd</a></h3>
           <h4>San Antonio, TX 78221</h4>
           <div className="hoursSpace">
             <div className="row">

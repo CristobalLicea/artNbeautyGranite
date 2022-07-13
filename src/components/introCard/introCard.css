@@ -85,6 +85,10 @@
   margin: 0;
 }
 
+.contactAddress a {
+  color: rgb(0, 109, 33);
+  text-decoration: none;
+}
 @media screen and (max-width: 480px) {
   .introCard {
     box-sizing: border-box;
@@ -141,6 +145,7 @@
 
   .contactAddress {
     font-size: 25px;
+    text-decoration: none;
   }
 
   .hoursSpace {
