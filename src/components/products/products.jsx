@@ -29,7 +29,7 @@ const Products = () => {
           <Card title="Quartz" image="/graniteIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/Sinks')}}>
-          <Card title="Sinks" image="/graniteIcon.jpeg"/>
+          <Card title="Sinks" image="/sinkIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/Faucets')}}>
           <Card title="Faucets" image="/graniteIcon.jpeg"/>

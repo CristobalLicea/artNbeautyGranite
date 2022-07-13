@@ -1,0 +1,36 @@
+.reachPage {
+  width: 100vw;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: mukta;
+}
+
+.reachsHeader {
+  padding-top: 90px;
+  font-size: 20px;
+}
+
+.reachs {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.reach {
+  width: fit-content;
+  height: fit-content;
+  z-index: 3;
+}
+
+@media screen and (max-width: 480px) {
+
+  .reachs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reach {
+    margin-bottom: 20px;
+  }
+}
