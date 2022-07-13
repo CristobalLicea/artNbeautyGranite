@@ -11,7 +11,7 @@ const Services = () => {
         <h1>Services</h1>
       </div>
       <div className="services">
-        <Card title="Fabrication"/>
+        <Card title="Fabrication" image="/fabricationService.png"/>
         <Card title="Installation"/>
         <Card title="Clean Up"/>
         <Card title="Maintenece Tips"/>

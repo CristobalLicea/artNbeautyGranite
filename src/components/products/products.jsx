@@ -28,11 +28,11 @@ const Products = () => {
         <div className="product" onClick={() => {navigate('/products/quartz')}}>
           <Card title="Quartz" image="/graniteIcon.jpeg"/>
         </div>
-        <div className="product" onClick={() => {navigate('/products/Sinks')}}>
+        <div className="product" onClick={() => {navigate(  '/products/Sinks')}}>
           <Card title="Sinks" image="/sinkIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/Faucets')}}>
-          <Card title="Faucets" image="/graniteIcon.jpeg"/>
+          <Card title="Faucets" image="/faucetIcon.jpeg"/>
         </div>
         
           

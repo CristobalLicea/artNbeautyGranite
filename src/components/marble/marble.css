@@ -1,21 +1,21 @@
-#granitePage {
+#marblePage {
   box-sizing: border-box;
   margin-top: 90px;
   width: 100vw;
   padding: 10px 80px;
 }
 
-.graniteHeader {
+.marbleHeader {
   margin-bottom: 80px;
   text-align: center;
 }
 
-.graniteHeader h1 {
+.marbleHeader h1 {
   font-size: 70px;
   font-family: The Nautigal;
 }
 
-.graniteHeader p {
+.marbleHeader p {
   line-height: 1.5;
   font-size: 18px;
 }
