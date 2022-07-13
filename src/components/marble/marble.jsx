@@ -10,7 +10,7 @@ const MarblePage = () => {
 
       <div className="marbleHeader">
         <h1>Marble Collection</h1>
-        <p></p>
+        <p>We offer Granite Fabrication and Installation to San Antonio and the surrounding areas.</p>
       </div>
       
       <div className="showBox">

@@ -1,0 +1,61 @@
+.display {
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.display img {
+  height: 100%;
+  transform: scale(1);
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.267);
+  text-align: center;
+  padding: 20px 50px;
+  color: white;
+  overflow: scroll;
+}
+
+.overlay h2{
+  font-weight: 300;
+  overflow: wrap;
+  text-shadow: 7px 7px 2px black;
+  line-height: 1.5;
+}
+.displayCardSpace {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0;
+}
+
+.displayCardSpace h4 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.displayCard {
+  width: 380px;
+  height: 230px;
+  background-color: red ;
+}
+
+.displayCard img {
+  width: 100%;
+}

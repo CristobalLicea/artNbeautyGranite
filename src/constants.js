@@ -46,3 +46,11 @@ export const BLACK = [
     img: "Nero-Stella.jpeg"
   },
 ]
+
+export const INTRO = [
+  'intro1.JPG',
+  'intro2.JPG',
+  'intro3.JPG',
+  'intro4.JPG',
+  'intro5.JPG',
+]

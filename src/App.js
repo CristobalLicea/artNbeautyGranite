@@ -11,6 +11,8 @@ import Work from './components/work/work';
 import Reach from './components/reach/reach';
 import Granite from './components/granite/granite'
 import Marble from './components/marble/marble';
+import Mobile from './components/mobile/mobile';
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/work" element={<Work />} />
       <Route path="/reach" element={<Reach />} />
+      <Route path="/mobile" element={<Mobile />} />
     </Routes>
   );
 } 

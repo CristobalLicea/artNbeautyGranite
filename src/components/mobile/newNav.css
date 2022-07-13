@@ -1,0 +1,33 @@
+.topBar {
+  box-sizing: border-box;
+  margin: 0%;
+  width: 100vw;
+  height: 55px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.icon {
+  height: 100%;
+  font-size: 30px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barPhone {
+  color: white;
+}
+
+.barPhone a {
+  text-decoration: none;
+  color: white;
+}
