@@ -7,28 +7,35 @@ import './imgCard.css'
 const ImgCard = () => {
   let i = 0
   const [image, setImage] = useState(INTRO[i])
+  
 
   const tick = () => {
     console.log('ticked')
     if (i === INTRO.length - 1) {
       console.log(i)
-      i = 0;
-      setImage(INTRO[i])
     } else {
       console.log(i)
-      i++;
-      setImage(INTRO[i])
     } 
   }
 
-  useEffect(() => {
-    console.log('set');
-    setInterval(tick, 8000)
-  })
-  
- 
+  const hello = () => {
+    console.log('1')
+    console.log(INTRO.length)
+    if (i === INTRO.length - 1) {
+      console.log(i)
+      i = 0
+    } else {
+      console.log(i)
+      i++;
+    }
+    setImage(INTRO[i])
+  }
 
+  const timer = setInterval(hello, 8000)
+  
+    
   return (
+    
     <div className="imgCard">
       <img src={image} alt="" />
       <div className="imgCardOverlay">
