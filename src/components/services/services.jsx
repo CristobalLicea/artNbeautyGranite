@@ -11,10 +11,22 @@ const Services = () => {
         <h1>Services</h1>
       </div>
       <div className="services">
-        <Card title="Fabrication" image="/fabricationService.png"/>
-        <Card title="Installation"image="/installationIcon.jpeg" />
-        <Card title="Clean Up"/>
-        <Card title="Maintenece Tips"/>
+        <div className="service">
+          <Card title="Fabrication" image="/fabricationService.png"/>
+        </div>
+        <div className="service">
+          <Card title="Installation" image="/installationIcon.jpeg" />
+        </div>
+        <div className="service">
+          <Card title="Clean Up" image="/installationIcon.jpeg"/>
+        </div>
+        <div className="service">
+          <Card title="Maintenece Tips" image="/installationIcon.jpeg"/>
+        </div>
+        
+        
+        
+        
       </div>
 
     </div>
