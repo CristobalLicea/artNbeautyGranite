@@ -4,8 +4,6 @@ import { INTRO } from "../../constants";
 import './imgCard.css'
 
 const ImgCard = () => {
-  let i = 0
-  const [image, setImage] = useState(INTRO[i])
   const [num, setNum] = useState(0)
 
   const hello = () => {
