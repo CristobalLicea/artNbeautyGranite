@@ -12,11 +12,17 @@ import Reach from './components/reach/reach';
 import Granite from './components/granite/granite'
 import Marble from './components/marble/marble';
 import Mobile from './components/mobile/mobile';
+import { useMediaQuery } from 'react-responsive'  
 
 
 
 function App() {
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+  });
   return (
+
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
