@@ -24,7 +24,7 @@ const ImgCard = () => {
   useEffect(() => {
     console.log('set');
     setInterval(tick, 8000)
-  }, [])
+  })
   
  
 
