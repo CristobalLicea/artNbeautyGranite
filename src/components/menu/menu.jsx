@@ -6,7 +6,6 @@ const Menu = ({isOpen, close}) => {
   let navigate = useNavigate();
 
   const navi = (e) => {
-    console.log(e.target.id)
     navigate('/' + e.target.id);
     close()
   }
@@ -21,75 +20,64 @@ const Menu = ({isOpen, close}) => {
       <div className="menuItems">
         <div className="menuCol">
           <h2 className="colHeader" id='products' onClick={navi}>Products</h2>
-          <div className="menuItem" onClick={navi}>
+          <div className="menuItem" id='products/granite' onClick={navi}>
             Granite
           </div>
-          <div className="menuItem">
-            Marble Quartz Lodomite
+          <div className="menuItem" id='marble' onClick={navi}>
+            Marble
           </div>
-          <div className="menuItem">
-            Sinks
+          <div className="menuItem" id='quartz' onClick={navi}>
+            Quartz
           </div>
-        <div className="menuItem">
-          Faucets
+        <div className="menuItem" id='sinks' onClick={navi}>
+          Sinks
         </div>
-        <div className="menuItem">
-          Maintenece
+        <div className="menuItem" id='faucets' onClick={navi}>
+          Faucets
         </div>
       </div>
 
       <div className="menuCol">
       <h2 className="colHeader" id='services' onClick={navi}>Services</h2>
-        <div className="menuItem">
+        <div className="menuItem" id='installation' onClick={navi}>
           Installation
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='fabrication' onClick={navi}>
           Fabrication
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='cleanup' onClick={navi}>
           Clean Up
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='tips' onClick={navi}>
           Maintenece Tips
         </div>
-        <div className="menuItem">
-          Test
-        </div>
+
       </div>
       <div className="menuCol">
-        <h2 className="colHeader">Customer Testimonials</h2>
-        <div className="menuItem">
+        <h2 className="colHeader" id='work' onClick={navi}>Our Work</h2>
+        <div className="menuItem" id='testimonials' onClick={navi} >
           Testimonials
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='gallery' onClick={navi} >
           Gallery
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='review' onClick={navi} >
           Leave a Review
-        </div>
-        <div className="menuItem">
-          Test
-        </div>
-        <div className="menuItem">
-          Test
         </div>
       </div>
       <div className="menuCol">
-      <h2 className="colHeader">Contact Us</h2>
-        <div className="menuItem">
+      <h2 className="colHeader" id='reach' onClick={navi}>Reach Us</h2>
+        <div className="menuItem" id='location' onClick={navi}>
           Location
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='contact' onClick={navi}>
           Contact
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='about' onClick={navi}>
           About Us
         </div>
-        <div className="menuItem">
+        <div className="menuItem" id='appointment' onClick={navi}>
           Book an Appointment
-        </div>
-        <div className="menuItem">
-          Test
         </div>
       </div>
     </div>
