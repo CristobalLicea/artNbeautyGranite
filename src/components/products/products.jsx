@@ -20,19 +20,19 @@ const Products = () => {
       <div className="products">
 
         <div className="product" onClick={() => {navigate('/products/granite')}}>
-          <Card title="Granite" />
+          <Card title="Granite" image="/graniteIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/marble')}}>
-          <Card title="Marble"/>
+          <Card title="Marble" image="/quartsIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/quartz')}}>
-          <Card title="Quartz"/>
+          <Card title="Quartz" image="/graniteIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/Sinks')}}>
-          <Card title="Sinks"/>
+          <Card title="Sinks" image="/graniteIcon.jpeg"/>
         </div>
         <div className="product" onClick={() => {navigate('/products/Faucets')}}>
-          <Card title="Faucets"/>
+          <Card title="Faucets" image="/graniteIcon.jpeg"/>
         </div>
         
           
