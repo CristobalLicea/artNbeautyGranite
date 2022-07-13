@@ -17,12 +17,7 @@ const MainNav = () => {
       </div>
       
       
-      <div className={!toggle ? "toggle off" : "toggle on"}>
-        <button>Products</button>
-        <button>Services</button>
-        <button>Our Work</button>
-        <button>Reach Us</button>
-      </div>
+  
 
       
 
