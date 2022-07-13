@@ -15,7 +15,7 @@ const Home = () => {
   
   return (
     <div>
-      {isMobileDevice ? <Mobile /> :
+      {!isMobileDevice ? <Mobile /> :
       <div id="homePage">
       <Nav />
       <IntroCard />
