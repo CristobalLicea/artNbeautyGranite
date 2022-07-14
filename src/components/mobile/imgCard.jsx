@@ -13,8 +13,6 @@ const ImgCard = () => {
       setNum(num + 1)
     }
   }
-
-
   return (
     
     <div className="imgCard">
