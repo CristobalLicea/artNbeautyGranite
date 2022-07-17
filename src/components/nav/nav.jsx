@@ -17,21 +17,18 @@ const Nav = () => {
 
   return (
     <nav>
+
         <div className="navLeft">
           <h1 onClick={navi}>Art & Beauty Granite</h1>
         </div>
+
         <div className="navRight">
-          <div className="searchBox">
-            <button onClick={() => setSearch(!search)} className="searchBtn"><AiOutlineSearch /></button>
-            <input className={search ? 'search isVisible' : 'search'} type="search" data-animation="effect"/>
-          </div>
-          <button className="browseBtn">Consultation</button>
-          <button className="consultBtn">Browse Stones</button>
           <div className="menu">
             <button onClick={() => setMenu(!menu)} className="menuBtn"><AiOutlineAlignRight className="menuIcon"/></button>
             <Menu isOpen={menu} close={() => setMenu(false)}/>
           </div>
         </div>
+
       </nav>
   )
 }

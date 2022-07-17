@@ -1,12 +1,12 @@
-import React from "react";
+  import React from "react";
 import './home.css'
-
-import Banner from "../banner/banner";
-import GenInfo from "../genInfo/genInfo";
 import IntroCard from "../introCard/introCard";
 import Nav from "../nav/nav";
 import Mobile from "../mobile/mobile";
 import { useMediaQuery } from 'react-responsive'
+import MiddleCard from "./middleCard";
+import Reasons from "../reasonsCard/reasonsCard";
+
 
 const Home = () => {
   const isMobileDevice = useMediaQuery({
@@ -19,10 +19,37 @@ const Home = () => {
       <div id="homePage">
       <Nav />
       <IntroCard />
-      <Banner />
-      <GenInfo />
-      <div className="space"></div>
-      <img src="KitchenImage.jpeg" alt="" className="fixedImage" style={{position: "fixed"}}/>
+      <MiddleCard />  
+
+      <div className="back center">
+        <div className="colored">
+          <div style={{width: '50%', height: '100%'}} className="center">
+            <Reasons />
+          </div>
+          <div className="half" style={{width: '50%', height: "100%"}}>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="part blank"></div>
+      <div className="part blank"></div>
+
+      <div className="part" >
+        <div className="cool center">
+          <div className="locationImg center">
+            <img src="/map.png" alt="" />
+          </div>
+          
+          <div className="location">
+            <h1>Servicing San Antonio and the surrounding areas for 15 years</h1>
+            <h2> <a className="address" href="">14435 Pleasanton Rd, San Antonio TX 78221</a> </h2>
+            <h2>Call <a className="phone" href="">210-875-3913</a> or <a className="phone" href="">210-875-3913</a> to schedule a visit <br /> 
+            or stop by<br />Monday - Friday 8am - 5pm</h2>
+          </div>
+        </div>
+      </div>
+     
       </div>}
       
     </div>
