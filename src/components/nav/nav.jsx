@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Menu from "../menu/menu";
-import { AiOutlineSearch, AiOutlineAlignRight } from "react-icons/ai";
+import {  AiOutlineAlignRight } from "react-icons/ai";
 import './nav.css'
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +13,6 @@ const Nav = () => {
   }
 
   const [menu, setMenu] = useState(false)
-  const [search, setSearch] = useState(false)
 
   return (
     <nav>
