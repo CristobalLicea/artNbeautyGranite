@@ -7,7 +7,6 @@ const MiddleCard = () => {
   let navigate = useNavigate();
 
   const navi = () => {
-    console.log('hmm?')
     navigate('/granite')
   }
 
