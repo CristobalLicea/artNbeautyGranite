@@ -1,31 +1,35 @@
 import './App.css';
 import React from 'react';
 import {
+  BrowserRouter,
   Routes,
-  Route
+  Route,
+  Outlet
 } from "react-router-dom";
 import Home from './components/home/home';
-import Products from './components/products/products';
-import Services from './components/services/services';
-import Work from './components/work/work';
-import Reach from './components/reach/reach';
 import Granite from './components/granite/granite'
-import Marble from './components/marble/marble';
-import Mobile from './components/mobile/mobile';
+import Nav from './components/nav/nav';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/products/granite" element={<Granite />} />
-      <Route path="/products/marble" element={<Marble />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/work" element={<Work />} />
-      <Route path="/reach" element={<Reach />} />
-      <Route path="/mobile" element={<Mobile />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>} />
+          <Route path="/granite" element={<Granite />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-} 
+}
+
+function Layout() {
+  return (
+    <div>
+      <Nav />
+      <Outlet />
+    </div>
+  );
+}
 
 export default App;

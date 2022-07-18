@@ -1,7 +1,6 @@
   import React from "react";
 import './home.css'
 import IntroCard from "../introCard/introCard";
-import Nav from "../nav/nav";
 import Mobile from "../mobile/mobile";
 import { useMediaQuery } from 'react-responsive'
 import MiddleCard from "./middleCard";
@@ -17,7 +16,6 @@ const Home = () => {
     <div>
       {!isMobileDevice ? <Mobile /> :
       <div id="homePage">
-      <Nav />
       <IntroCard />
       <MiddleCard />  
 
