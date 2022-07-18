@@ -1,7 +1,6 @@
 import React from "react";
 import './granite.css';
-import { TERRA, CLASSIC, BLACK, GRANITE } from "../../constants";
-import Nav from '../nav/nav'
+import { GRANITE } from "../../constants";
 import Card from "../card/card";
 
 const GranitePage = () => {
