@@ -4,9 +4,7 @@ import { GRANITE } from "../../constants";
 import Card from "../card/card";
 
 const GranitePage = () => {
-  const click = () => {
-    console.log('hello')
-  }
+
   return (
     <div id="granitePage">
 
@@ -17,7 +15,7 @@ const GranitePage = () => {
 
       <div className="showBox">
         {GRANITE.map((stone) => (
-          <Card title={stone.title} image={stone.img} onClick={click}/>
+          <Card title={stone.title} image={stone.img}/>
         ))}
       </div>
 
