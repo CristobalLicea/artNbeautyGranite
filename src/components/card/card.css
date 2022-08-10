@@ -21,7 +21,17 @@
 
 .card h3 {
   margin: 0;
+}
 
+.fave {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardOuter {
@@ -29,6 +39,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .cardOuter:hover h3{

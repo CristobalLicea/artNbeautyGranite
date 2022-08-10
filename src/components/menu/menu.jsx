@@ -1,7 +1,9 @@
 import React from "react";
+
 import './menu.css'
 
 const Menu = ({isOpen, close}) => {
+
 
   return (
   <div className={!isOpen ? "menuu" : "menuu isVisible"} data-animation="effect">
@@ -12,14 +14,15 @@ const Menu = ({isOpen, close}) => {
       </div>
 
       <div className="form">
-        <form action="https://formsubmit.co/artnbeautygranite@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Name" autoComplete="off"/>
-          <input type="email" name="email" placeholder="Email" autoComplete="off"/>
-          <input type="text" name="phone" placeholder="Phone" autoComplete="off"/>
-          <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <br />
-          <button type="submit">Submit</button>
-          <input type="hidden" name="_next" value="https://www.artandbeautygranite.com/"></input>
+        <form>
+          <h2>Contact Us:</h2>
+          <input type="text" name="name" placeholder="Name" autoComplete="off" required/>
+          <input type="text" name="email" placeholder="Email" autoComplete="off" required/>
+          <input type="text" name="phone" placeholder="Phone" autoComplete="off" required/>
+          <textarea name="message" id="" placeholder="Enter your message here, and we'll get back to you as soon as possible. Thank you."></textarea>
+          <div>
+            <button id="registerBtn">Submit</button>
+          </div>
         </form>
       </div>
       

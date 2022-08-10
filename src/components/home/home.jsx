@@ -9,7 +9,7 @@ import Reasons from "../reasonsCard/reasonsCard";
 
 const Home = () => {
   const isMobileDevice = useMediaQuery({
-    query: "(min-device-width: 480px)",
+    query: "(min-device-width: 720px)",
   });
   
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       {!isMobileDevice ? <Mobile /> :
       <div id="homePage">
       <IntroCard />
-      <MiddleCard />  
+      <MiddleCard id="products"/>  
 
       <div className="back center">
         <div className="colored">
@@ -39,7 +39,7 @@ const Home = () => {
             <img src="/map.png" alt="" />
           </div>
           
-          <div className="location">
+          <div className="location" id="location">
             <h1>Servicing San Antonio and the surrounding areas for 15 years</h1>
             <h2> <a className="address" href="https://www.google.com/maps/place/14435+Pleasanton+Rd,+San+Antonio,+TX+78221/">14435 Pleasanton Rd, San Antonio TX 78221</a> </h2>
             <h2>Call <a className="phone" href="tel:2108753913">210-875-3913</a> or <a className="phone" href="tel:2108750314">210-875-0314</a> to schedule a visit <br /> 

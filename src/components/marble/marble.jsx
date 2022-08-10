@@ -3,7 +3,7 @@ import './marble.css';
 import { TERRA, CLASSIC, BLACK } from "../../constants";
 import Nav from '../nav/nav'
 
-const MarblePage = () => {
+const Marble = () => {
   return (
     <div id="marblePage">
       <Nav />
@@ -60,4 +60,4 @@ const MarblePage = () => {
   )
 }
 
-export default MarblePage
+export default Marble

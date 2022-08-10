@@ -30,7 +30,7 @@
 .collection {
   width: 250px;
   height: 250px;
-  background-color: blueviolet;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@
 }
 
 .cool {
-  background-color: black;
+  background-color: rgb(41, 41, 41);
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -110,21 +110,26 @@
 }
 
 .locationImg {
-  width: 50%;
+  width: 40%;
   height: 100%;
-  
 }
+
+.locationImg img {
+  border-radius: 5px;
+  margin-left: 35px;
+}
+
 .location {
-  width: 50%;
+  width: 60%;
   height: 100%;
-  text-align:start;
 }
 
 .location h1 {
   margin-bottom: 150px;
   font-family: The Nautigal;
   font-size: 70px;
-  
+  text-align: center;
+  padding: 0 20px;
 }
 
 .location h2 {

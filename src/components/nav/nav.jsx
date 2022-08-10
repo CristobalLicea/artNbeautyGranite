@@ -23,9 +23,11 @@ const Nav = () => {
 
         <div className="navRight">
           <div className="menu">
-            <button onClick={() => setMenu(!menu)} className="menuBtn"><AiOutlineAlignRight className="menuIcon"/></button>
+            <button onClick={() => setMenu(!menu)} className="menuBtn center"><AiOutlineAlignRight className="menuIcon"/></button>
             <Menu isOpen={menu} close={() => setMenu(false)}/>
+            
           </div>
+          <a href="#location" className="reachBtn center">Reach Us</a>
         </div>
 
       </nav>

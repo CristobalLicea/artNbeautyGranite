@@ -13,17 +13,16 @@
   flex-direction: row;
 }
 
-.reasons p {
-  text-shadow: 0 0 2px black;
-}
-
 .checklist {
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 50%;
   overflow: hidden;
+  font-weight: 700;
 }
 
 .checklist p {
