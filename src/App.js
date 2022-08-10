@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useContext, createContext, useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -11,8 +11,6 @@ import Home from './components/home/home';
 import Granite from './components/granite/granite'
 import Marble from './components/marble/marble'
 import Nav from './components/nav/nav';
-
-
 
 function App() {
   return (
