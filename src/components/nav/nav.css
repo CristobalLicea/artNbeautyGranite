@@ -2,7 +2,7 @@ nav {
   box-sizing: border-box;
   height: 90px;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(41, 41, 41);
   box-shadow: 0 0 10px black;
   border-bottom: solid black 1px;
   display: flex;
